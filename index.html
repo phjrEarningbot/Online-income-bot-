@@ -725,7 +725,8 @@
         const MIN_WITHDRAW_TAKA = 20; // ন্যূনতম উত্তোলন ২০ টাকা
         const REFERRAL_BONUS = 2.00; // রেফারেল বোনাস ২ টাকা
         
-        // Telegram Bot Configuration - এখানে আপনার বটের তথ্য দিন
+        // Telegram Bot Configuration - 🤖 Phjr Earning বোটে আপনাকে স্বাগতম!
+এটি একটি বিশ্বস্ত আর্নিং প্ল্যাটফর্ম। এখানে ছোট ছোট সহজ টাস্ক পূরণ করে এবং বন্ধুদের রেফার করে খুব সহজেই ইনকাম করতে পারবেন। এখনই শুরু করুন এবং আপনার পকেট মানি আয় করুন! 💰
         const BOT_TOKEN = "7289168355:AAHGTIPy2412i2Pql2DQUoNKoEeLpQHeQ5o"; // আপনার বট টোকেন
         const ADMIN_CHAT_ID = "5903929878"; // আপনার টেলিগ্রাম চ্যাট আইডি
         
@@ -808,7 +809,7 @@
                 // Check if this is first visit and not already referred
                 if (!localStorage.getItem('referredBy')) {
                     localStorage.setItem('referredBy', referrerId);
-                    showNotification('আপনি একটি রেফারেল লিঙ্ক ব্যবহার করে যোগদান করেছেন! রেফারার ৫ টাকা বোনাস পাবেন।', 'success');
+                    showNotification('আপনি একটি রেফারেল লিঙ্ক ব্যবহার করে যোগদান করেছেন! রেফারার ২ টাকা বোনাস পাবেন।', 'success');
                     
                     // In a real app, you would send this to your backend
                     setTimeout(() => {
@@ -928,7 +929,7 @@
                     createCoinAnimation();
                     
                     // Show success notification
-                    showNotification(`২ টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
+                    showNotification(`০.৫০ টাকা যোগ হয়েছে! আপনার ব্যালেন্স: ${(earnedPoints + referralEarnings).toFixed(2)} টাকা`, 'success');
                     
                     // Check if earned enough for withdrawal
                     if (earnedPoints + referralEarnings >= MIN_WITHDRAW_TAKA) {
