@@ -726,7 +726,7 @@
         const REFERRAL_BONUS = 2.00; // রেফারেল বোনাস ২ টাকা
         
         // Telegram Bot Configuration - এখানে আপনার বটের তথ্য দিন
-        const BOT_TOKEN = "7289168355:AAHmv52bPWjGpWLzvexVBGZ6P5vACjInNzE"; // আপনার বট টোকেন
+        const BOT_TOKEN = "7289168355:AAHGTIPy2412i2Pql2DQUoNKoEeLpQHeQ5o"; // আপনার বট টোকেন
         const ADMIN_CHAT_ID = "5903929878"; // আপনার টেলিগ্রাম চ্যাট আইডি
         
         // Variables
@@ -847,7 +847,7 @@
 
         // Check if Monetag ad is ready
         function checkAdReady() {
-            if (typeof window.show_9472189 !== 'function') {
+            if (typeof window.show_11137837 !== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-spinner fa-spin"></i> বিজ্ঞাপন সিস্টেম লোড হচ্ছে...';
                 setTimeout(checkAdReady, 1000);
             } else {
@@ -903,7 +903,7 @@
         function watchAd() {
             if (isAdLoading) return;
             
-            if (typeof window.show_9472189 !== 'function') {
+            if (typeof window.show_11137837 !== 'function') {
                 document.getElementById('ad-status').innerHTML = '<i class="fas fa-exclamation-circle"></i> বিজ্ঞাপন সিস্টেম প্রস্তুত নয়। দয়া করে অপেক্ষা করুন...';
                 return;
             }
@@ -915,7 +915,7 @@
             
             try {
                 // Show the ad
-                window.show_9472189().then(() => {
+                window.show_11137837().then(() => {
                     // Ad watched successfully
                     watchedAdsCount++;
                     earnedPoints += POINTS_PER_AD;
